@@ -1,7 +1,7 @@
 # 台灣旅遊景點導覽
 
 ## DEMO
-https://ellentyyu.github.io/F2E_taiwan_travel/
+https://ellentyyu.github.io/F2E_taiwan_travel_vue/
 
 ## 功能
 * 台灣旅遊景點搜尋

@@ -1,0 +1,160 @@
+body{
+  color: $darkgray;
+}
+
+
+.bg-cover{
+  background-size: cover;
+  background-position: center center;
+}
+.text-hide{
+  height: 0px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+//bs的寫法 用在圖片的文字上
+.text-hide-img{
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.ls-1{
+  letter-spacing: 1px;
+}
+
+
+
+.form-select, .btn, .form-control{
+  border-radius: 12px !important;
+}
+.custom-radius{
+  border-radius: 12px;
+}
+.custom-shadow{
+  box-shadow: 0px 2px 6px #bfbfbf;
+}
+.btn-gold{
+  color: white;
+  transition: all .3s;
+  &:hover{
+    color: white;
+  }
+  &:focus{
+    color: white;
+  }
+}
+
+.link-darkgray{
+  color: $darkgray;
+  transition: all .3s;
+  &.hover{
+    color: black;
+  }
+}
+.font-ch{
+  font-family: 'Noto Serif TC', serif;
+}
+
+.font-en{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.shade-layer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// scrolltop icon
+.scroll-top{
+  bottom: 12%;
+  right: 1.8%;
+  .scroll-top-arrow{
+    width: 40px;
+    height: 40px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 50%;
+    line-height: 40px;
+    background-color:#f8c3a1;
+    transition: all 0.3s;
+    &:hover{
+      background-color: #f7ccb2;
+    }
+  }
+}
+
+// 滑鼠動畫
+//#scroll高度其實是0 這段margin也可以用span的position來寫
+#scroll{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 40px;
+  }
+}
+#scroll span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #222222;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transform: scale(.8);
+}
+#scroll span::before {
+  position: absolute;
+  top: 10px;
+  left: 57%;
+  content: '';
+  width: 2px;
+  height: 8px;
+  margin-left: -3px;
+  background-color: #222222;
+  -webkit-animation: scroll-ani 2s infinite;
+  animation: scroll-ani 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes scroll-ani {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scroll-ani {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

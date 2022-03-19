@@ -1,0 +1,7 @@
+{
+  "North": [{"ch":"臺北市", "en":"Taipei"},{"ch":"新北市", "en":"NewTaipei"},{"ch":"桃園市", "en":"Taoyuan"},{"ch":"新竹縣", "en":"HsinchuCounty"},{"ch":"新竹市", "en":"Hsinchu"},{"ch":"基隆市", "en":"Keelung"},{"ch":"宜蘭縣", "en":"YilanCounty"}],
+  "Central": [{"ch":"臺中市", "en":"Taichung"},{"ch":"彰化縣", "en":"ChanghuaCounty"},{"ch":"南投縣", "en":"NantouCounty"},{"ch":"苗栗縣", "en":"MiaoliCounty"}],
+  "South": [{"ch":"臺南市", "en":"Tainan"},{"ch":"高雄市", "en":"Kaohsiung"},{"ch":"雲林縣", "en":"YunlinCounty"},{"ch":"嘉義縣", "en":"ChiayiCounty"}, {"ch":"嘉義市", "en":"Chiayi"}, {"ch":"屏東縣", "en":"PingtungCounty"}],
+  "East": [{"ch":"花蓮縣", "en":"HualienCounty"},{"ch":"臺東縣", "en":"TaitungCounty"}],
+  "Islands": [{"ch":"澎湖縣", "en":"PenghuCounty"},{"ch":"金門縣", "en":"KinmenCounty"},{"ch":"連江縣", "en":"LienchiangCounty"}]
+}

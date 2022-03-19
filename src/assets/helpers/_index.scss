@@ -1,0 +1,51 @@
+.home-banner{
+  .shade-layer{
+    background-color:rgba($color: #000000, $alpha: .1);
+  }
+  .banner-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .tw-logo{
+    width: 200px;
+    z-index: 5;
+    @include media-breakpoint-up(sm) {
+      width: 300px;
+    }
+    @include media-breakpoint-up(md) {
+      width: 400px;
+    }
+  }
+  .home-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 24px 16px;
+    border-radius: 12px;
+    box-shadow: 1px 4px 6px #888888ad;
+    z-index: 5;
+    width: 100%;
+    margin-top: 50px;
+    @include media-breakpoint-up(sm) {
+      width: 80%;
+    }
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 60%;
+    }
+    .form-select{
+      background-color: #ebebeb;
+      color: $darkgray;
+      border: none;
+      margin-bottom: 16px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

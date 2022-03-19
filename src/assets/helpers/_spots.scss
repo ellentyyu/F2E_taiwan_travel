@@ -1,0 +1,170 @@
+.attr-banner{
+  height: 200px;
+}
+.page-tags{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+#attr-swiper{
+  .slide-item{
+    height: 200px;
+    border-radius: 12px;
+    .text-wrap{
+      height: 100%;
+      padding: 20px;
+      color: white;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+  .swiper-slide-active{
+    transform: scale(1.18);
+    .shade-layer{
+      display: none;
+    }
+  }
+  .swiper-slide-next{
+    .shade-layer{
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .7), rgba(255, 255, 255, 1));
+    }
+    .text-wrap{
+      display: none;
+    }
+  }
+  .swiper-slide-prev{
+    .shade-layer{
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, .7), rgba(255, 255, 255, 0));
+    }
+    .text-wrap{
+      display: none;
+    }
+  }
+  .swiper-button-prev, .swiper-rtl .swiper-button-next, .swiper-button-next{
+    top: 47%;
+    &::after{
+      color: $primary;
+      font-size: 26px !important;
+      font-weight: bold;
+    }
+  }
+  .swiper-button-prev{
+    left: 2%;
+    @include media-breakpoint-up(sm) {
+      left: 7%;
+    }
+    @include media-breakpoint-up(md) {
+      left: 26%;
+    }
+  }
+  .swiper-rtl .swiper-button-next, .swiper-button-next{
+    right: 2%;
+    @include media-breakpoint-up(sm) {
+      right: 7%;
+    }
+    @include media-breakpoint-up(md) {
+      right: 26%;
+    }
+  }
+}
+.key-input{
+  padding: 10px 16px;
+  &::placeholder{
+    color: #b3b3b3;
+  }
+}
+.attr-form{
+  .form-select{
+    background-color: #ebebeb;
+    color: $darkgray;
+    border: none;
+  }
+  .form-check{
+    margin: 4px 0;
+  }
+}
+.attr-title-p{
+  padding: 10px 0;
+}
+.attr-item{
+  .attr-img{
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    @include media-breakpoint-up(lg) {
+      height: 210px;
+    }
+  }
+  .badge{
+    font-size: 13px;
+    line-height: 13px;
+    padding: 6px 10px;
+  }
+  .attr-des{
+    line-height: 1.4;
+    letter-spacing: 1px;
+  }
+} 
+
+.no-result{
+  text-align: center;
+  .fa-triangle-exclamation{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 120px;
+    color: #c4c4c4;
+  }
+}
+
+
+// 單一景點
+.spot-info{
+  .info-list-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    .info-icon{
+      margin-right: 16px;
+      font-size: 24px;
+      color: $primary;
+    }
+  }
+  .spot-info-img{
+    height: 300px;
+    border-radius: 12px;
+  }
+  .spot-info-des{
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+  }
+}
+.two-dots{
+  position: absolute;
+  top: 53px;
+  left: 20px;
+  width: auto;
+  height: calc(100% + 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  span{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $primary;
+  }
+  &::after{
+    content: '';
+    height: 100%;
+    width: 1.5px;
+    background-color: $primary;
+    position: absolute;
+    left: 50%;
+    top:0;
+    transform: translateX(-50%);
+  }
+}

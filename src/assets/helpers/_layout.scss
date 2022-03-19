@@ -1,0 +1,63 @@
+.navbar.position-fixed{
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+}
+.navbar.transparent-white{
+  background: transparent;
+  &.open-bg{
+    background: white;
+    .navbar-brand, .nav-link, .navbar-toggler{
+      color: $primary;
+    }
+  }
+  .navbar-brand, .nav-link{
+    color: rgba($color: white, $alpha: .8);
+    &:hover{
+      color: white;
+    }
+  }
+  .navbar-toggler{
+    color: white;
+  }
+}
+.navbar.transparent-black{
+  background: transparent;
+  &.open-bg{
+    background: white;
+  }
+  .navbar-brand, .nav-link{
+    color: $darkgray;
+    &:hover{
+      color: black;
+    }
+  }
+  .navbar-toggler{
+    color: $darkgray;
+  }
+}
+.navbar.sky{
+  background: $sky;
+  .navbar-brand, .nav-link{
+    color: rgba($color: white, $alpha: .8);
+    &:hover{
+      color: white;
+    }
+  }
+  .navbar-toggler{
+    color: white;
+  }
+}
+.navbar{
+  transition: all .3s;
+}
+.navbar-brand{
+  font-family: $font-en;
+  font-size: 18px;
+  margin-right: 0px;
+}
+.navbar-expand-md .navbar-nav .nav-link{
+  font-family: $font-ch;
+  padding: 14px 20px;
+}

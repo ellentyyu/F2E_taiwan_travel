@@ -1,0 +1,52 @@
+.res-intro{
+  .intro-text{
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    p{
+      margin-bottom: 16px;
+    }
+  }
+  .res-tw-logo{
+    width: 200px;
+    margin: 0 auto;
+  }
+  .res-search-wrap{
+    border-top: 1px solid $darkgray;
+    border-bottom: 1px solid $darkgray;
+    padding: 36px 0px;
+    .res-form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include media-breakpoint-up(md) {
+        flex-direction: row;
+      }
+      .form-select{
+        background-color: #ebebeb;
+        color: $darkgray;
+        border: none;
+        margin-bottom: 16px;
+        @include media-breakpoint-up(md) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.res-gallery{
+  .gallery-card{
+    .gallery-text-wrap{
+      height: 240px;
+      overflow: hidden;
+      &.open{
+        height: auto;
+      }
+      .gallery-text{
+        line-height: 1.4;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

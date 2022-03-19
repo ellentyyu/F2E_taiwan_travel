@@ -15,6 +15,7 @@ https://ellentyyu.github.io/F2E_taiwan_travel_vue/
 * Composition API
 * Vue CLI
 * Vue Router
+* Swiper
 * Bootstrap 5
 * SCSS
 

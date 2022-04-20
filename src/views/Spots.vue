@@ -392,6 +392,7 @@ export default {
     router.push(`/spots?county=${countySelected.value}&page=1`);
     getSpots();
     window.addEventListener("resize", handleWidth);
+    handleWidth();
     return {
       modules: [Navigation],
       areaSelected,
